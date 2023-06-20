@@ -55,8 +55,8 @@ $(document).ready(function () {
 
         // Create the data object
         const data = {
-            email: email,
-            username: username,
+            userEmail: email,
+            userName: username,
             password: password
         };
 
