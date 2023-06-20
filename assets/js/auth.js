@@ -43,3 +43,51 @@ $(document).ready(function () {
         });
     });
 });
+
+$(document).ready(function () {
+    // Form submit event
+    $('.signUpForm').submit(function (e) {
+        e.preventDefault(); // Prevent form submission
+
+        const email = $('#floatingEmail').val();
+        const username = $('#floatingUsername').val();
+        const password = $('#floatingPassword').val();
+
+        // Create the data object
+        const data = {
+            email: email,
+            username: username,
+            password: password
+        };
+
+        // Send the signup request
+        $.ajax({
+            url: 'https://api.youandus.net/users',
+            type: 'POST',
+            dataType: 'json',
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            headers: {
+                'Access-Control-Allow-Origin': 'https://www.youandus.net/',
+                'Access-Control-Allow-Methods': 'POST',
+                'Access-Control-Allow-Headers': 'Content-Type'
+            },
+            success: function (response) {
+                // Handle successful signup
+                console.log(response);
+                $('#successSignUpAlert').text(response.message);
+                $('#successSignUpModal').removeClass('d-none').addClass('d-block');
+                setTimeout(function () {
+                    window.location.href = 'signin.html';
+                }, 2000);
+            },
+            error: function (xhr, status, error) {
+                // Handle login error
+                console.log(xhr.responseText);
+                const errorResponse = JSON.parse(xhr.responseText);
+                const errorMessage = errorResponse.message || 'Signup failed. Please try again.';
+                $('#errorSignUpAlert').text(errorMessage).removeClass('d-none');
+            }
+        });
+    });
+});
