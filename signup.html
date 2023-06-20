@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <script src="/assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Signup · You&Us App - The most popular Event Planner in the world.</title>
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/sign.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<main class="w-100 m-auto">
+    <div class="modal modal-sheet d-block p-4 py-md-5" tabindex="-1" role="dialog"
+         id="modalSignUp">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <h1 class="fw-bold mb-0 fs-2 ">Sign Up You&Us</h1>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                    <form class="signUpForm">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" id="floatingEmail"
+                                   placeholder="name@youandus.net">
+                            <label for="floatingEmail">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control rounded-3" id="floatingUsername"
+                                   placeholder="Username">
+                            <label for="floatingUsername">Username</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                   placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-bd-primary" type="submit">Sign Up</button>
+                        <small class="text-body-secondary">By clicking Sign Up, you agree to the terms of use.</small>
+                        <div id="errorSignUpAlert" class="alert alert-danger d-none mt-3" role="alert"></div>
+                    </form>
+                    <hr class="my-4">
+                    <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                        Sign Up with Twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                        Sign Up with Facebook
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#github"></use>
+                        </svg>
+                        Sign Up with GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-sheet position-absolute d-none bg-body-secondary p-4 py-md-5" tabindex="-1"
+         role="dialog" id="successSignUpModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-body  p-5 rounded-4">
+                    <h2 class="fw-bold mb-0 text-success">Successfully</h2>
+                    <ul class="d-grid gap-4 my-5 list-unstyled small text-success">
+                        <li class="d-flex gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                 class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>
+                            <div>
+                                <h5 id="successSignUpAlert" class="mb-0 text-success-emphasis"></h5>
+                                Redirecting...
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-outline-success mt-5 w-100"
+                            data-bs-dismiss="modal">Great, thanks!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
