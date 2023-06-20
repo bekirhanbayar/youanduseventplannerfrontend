@@ -1285,8 +1285,10 @@
     .bd-layout {
         display: grid;
         grid-template-areas:"sidebar main";
-        gap: 1.5rem
+        gap: 1.5rem;
+        grid-template-columns: max-content;
     }
+
 }
 
 .bd-sidebar {
