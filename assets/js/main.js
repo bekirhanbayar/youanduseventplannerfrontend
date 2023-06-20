@@ -81,7 +81,11 @@ window.addEventListener('DOMContentLoaded', restoreSidebarState);
 document.getElementById('sidebarToggle').addEventListener('change', toggleSidebar);
 
 // Sayfa değişikliği olduğunda kenar çubuğunun durumunu koru
-window.addEventListener('beforeunload', function() {
+window.addEventListener('beforeunload', function () {
     const checkbox = document.getElementById('sidebarToggle');
     localStorage.setItem('sidebarStatus', checkbox.checked);
 });
+
+
+
+

@@ -300,8 +300,8 @@
 }
 
 .about-person-card {
-    height: 379px;
-    width: 300px;
+    aspect-ratio: 9/11;
+    width: calc(100% - 40px);
     border-radius: 10px;
     transition: background 0.8s;
     overflow: hidden;
@@ -313,8 +313,8 @@
 }
 
 .about-person-card .border {
-    height: 369px;
-    width: 290px;
+    aspect-ratio: 9/11;
+    width: calc(100% - 40px);
     background: transparent;
     border-radius: 10px;
     transition: border 1s;
@@ -356,7 +356,7 @@
     fill: #fff;
     color: #fff;
     height: 130px;
-    top: 226px;
+    top: calc(100% - 150px);
     width: 50px;
     display: flex;
     flex-direction: column;
