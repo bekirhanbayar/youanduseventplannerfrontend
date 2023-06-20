@@ -49,14 +49,14 @@ $(document).ready(function () {
     $('.signUpForm').submit(function (e) {
         e.preventDefault(); // Prevent form submission
 
-        const email = $('#floatingEmail').val();
-        const username = $('#floatingUsername').val();
+        const userEmail = $('#floatingEmail').val();
+        const userName = $('#floatingUsername').val();
         const password = $('#floatingPassword').val();
 
         // Create the data object
         const data = {
-            userEmail: email,
-            userName: username,
+            userEmail: userEmail,
+            userName: userName,
             password: password
         };
 
