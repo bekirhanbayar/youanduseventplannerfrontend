@@ -87,3 +87,9 @@ function updateProfile() {
         }
     });
 }
+
+document.getElementById("update-button").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    updateProfile();
+});
