@@ -29,9 +29,14 @@ $(document).ready(function () {
                 console.log(response);
                 $('#successSignInAlert').text(response.message);
                 $('#successSignInModal').removeClass('d-none').addClass('d-block');
+                // Save to Token localStorage
+
+                const token = response.data.token;
+                localStorage.setItem('userToken', token);
+
                 setTimeout(function () {
                     window.location.href = 'account/index.html';
-                }, 2000);
+                }, 8000);
             },
             error: function (xhr, status, error) {
                 // Handle login error
@@ -91,3 +96,5 @@ $(document).ready(function () {
         });
     });
 });
+
+

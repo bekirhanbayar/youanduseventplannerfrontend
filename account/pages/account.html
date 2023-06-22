@@ -12,6 +12,10 @@
     <link href="/assets/css/docs.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
 
+    <script href="/assets/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/dist/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/profile.js"></script>
+
 
 </head>
 
@@ -655,74 +659,55 @@
                                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-2 py-5">
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput"
+                                                <label for="userName"
                                                        class="form-label">Username</label>
-                                                <input type="text" class="form-control"
-                                                       id="formGroupExampleInput"
-                                                       placeholder="selcuk_teknoloji">
+                                                <input id="userName" type="text" class="form-control" value=""
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput2"
+                                                <label for="firstName"
                                                        class="form-label">Name</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput2"
-                                                       placeholder="Selçuk Üniversitesi Teknoloji Fakültesi">
+                                                       id="firstName"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput3"
-                                                       class="form-label">Email</label>
-                                                <input type="text" class="form-control"
-                                                       id="formGroupExampleInput3"
-                                                       placeholder="teknoloji@selcuk.edu.tr">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput4" class="form-label">Found
+                                                <label for="foundYear" class="form-label">Found
                                                     Year</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput4"
-                                                       placeholder="01/01/2023">
+                                                       id="foundYear"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput5" class="form-label">Organization
+                                                <label for="organizationType" class="form-label">Organization
                                                     Type</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput5"
-                                                       placeholder="Fakülte">
+                                                       id="organizationType"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput6" class="form-label">Organization
+                                                <label for="capacity" class="form-label">Organization
                                                     Capacity</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput6"
-                                                       placeholder="3000-3499">
+                                                       id="capacity"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput7" class="form-label">Example
-                                                    label</label>
+                                                <label for="aboutOrganization" class="form-label">About
+                                                    Organization</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput7"
-                                                       placeholder="Example input placeholder">
-                                            </div>
-                                        </div>
-                                        <div class="col ">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput8" class="form-label">Example
-                                                    label</label>
-                                                <input type="text" class="form-control"
-                                                       id="formGroupExampleInput8"
-                                                       placeholder="Example input placeholder">
+                                                       id="aboutOrganization"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -733,38 +718,38 @@
                                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-2 py-5">
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput9"
+                                                <label for="address"
                                                        class="form-label">Address</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput9"
-                                                       placeholder="Akademi Mh. Yeni İstanbul Cd. No:1">
+                                                       id="address"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput10"
+                                                <label for="city"
                                                        class="form-label">City</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput10"
-                                                       placeholder="Konya">
+                                                       id="city"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput11"
+                                                <label for="state"
                                                        class="form-label">State</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput11"
-                                                       placeholder="Türkiye">
+                                                       id="state"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput12" class="form-label">Zip
+                                                <label for="zipCode" class="form-label">Zip
                                                     Code</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput12"
-                                                       placeholder="42250">
+                                                       id="zipCode"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -775,74 +760,74 @@
                                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-2 py-5">
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput13" class="form-label">Email
+                                                <label for="userEmail" class="form-label">Email
                                                     Address</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput13"
-                                                       placeholder="teknoloji@selcuk.edu.tr">
+                                                       id="userEmail"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput14" class="form-label">Phone
+                                                <label for="phoneNumber" class="form-label">Phone
                                                     Number</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput14"
-                                                       placeholder="+903221112233">
+                                                       id="phoneNumber"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput15" class="form-label">Whatsapp
+                                                <label for="whatsappNumber" class="form-label">Whatsapp
                                                     Number</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput15"
-                                                       placeholder="+905556667788">
+                                                       id="whatsappNumber"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput16" class="form-label">Kip
+                                                <label for="kipAdress" class="form-label">Kip
                                                     Address</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput16"
-                                                       placeholder="selcuk@kip.tr">
+                                                       id="kipAdress"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput17"
+                                                <label for="facebook"
                                                        class="form-label">Facebook</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput17"
-                                                       placeholder="selcuk_teknoloji">
+                                                       id="facebook"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput18"
+                                                <label for="instagram"
                                                        class="form-label">Instagram</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput18"
-                                                       placeholder="selcuk_teknoloji">
+                                                       id="instagram"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput19"
+                                                <label for="twitter"
                                                        class="form-label">Twitter</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput19"
-                                                       placeholder="selcuk_teknoloji">
+                                                       id="twitter"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput20"
-                                                       class="form-label">Instagram</label>
+                                                <label for="linkedin"
+                                                       class="form-label">Linkedin</label>
                                                 <input type="text" class="form-control"
-                                                       id="formGroupExampleInput20"
-                                                       placeholder="selcuk_teknoloji">
+                                                       id="linkedin"
+                                                       disabled readonly>
                                             </div>
                                         </div>
                                     </div>
