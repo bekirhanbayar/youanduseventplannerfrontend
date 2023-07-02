@@ -609,24 +609,36 @@
                             <h3 class="display-5 mb-3 fw-semibold lh-sm d-inline-block">
                                 Organization Account
                             </h3>
-                            <form class="row g-3">
+                            <form class="row g-3" id="updateProfile">
                                 <div class="col-md-6">
                                     <label for="userEmail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="userEmail"/>
+                                    <input type="email" class="form-control" id="userEmail"
+                                           placeholder="mail@youandus.net"/>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputUsername" id="inputUsername" class="form-label"
                                     >Username</label>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="userName">@</span>
+                                        <span class="input-group-text">@</span>
                                         <input
                                                 type="text"
+                                                id="userName"
                                                 class="form-control"
                                                 placeholder="username"
                                                 aria-label="Username"
                                                 aria-describedby="userName"
                                         />
                                     </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="firstName" class="form-label"
+                                    >Organization Name</label>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="firstName"
+                                            placeholder="Name"
+                                    />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputPassword" id="inputPassword" class="form-label">Password</label>
@@ -656,6 +668,7 @@
                                 <div class="col-md-6">
                                     <label for="organizationType" class="form-label">Organization Type</label>
                                     <select id="organizationType" class="form-select">
+                                        <option selected>Lütfen Seçiniz</option>
                                         <option value="University">University</option>
                                         <option value="Faculty">Faculty</option>
                                         <option value="College">College</option>
@@ -719,23 +732,14 @@
                                             placeholder="1234 Merkez Caddesi"
                                     />
                                 </div>
-                                <div class="col-12">
-                                    <label for="inputAddress2" class="form-label">Address 2</label>
-                                    <input
-                                            type="text"
-                                            class="form-control"
-                                            id="inputAddress2"
-                                            placeholder="Apartman, Daire, yada Kat"
-                                    />
-                                </div>
-                                <div class="col-md-2">
+                                <div class="col-md-4">
                                     <label for="zipCode" class="form-label">Zip Code</label>
                                     <input type="text" class="form-control" id="zipCode"/>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-4">
                                     <label for="city" class="form-label">City</label>
                                     <select id="city" class="form-select">
-                                        <option selected>Lütfen Seçiniz...</option>
+                                        <option selected>Lütfen Seçiniz</option>
                                         <option value="Adana">Adana</option>
                                         <option value="Adıyaman">Adıyaman</option>
                                         <option value="Afyonkarahisar">Afyonkarahisar</option>
@@ -820,6 +824,7 @@
                                 <div class="col-md-4">
                                     <label for="state" class="form-label">Country</label>
                                     <select id="state" class="form-select">
+                                        <option selected>Lütfen Seçiniz</option>
                                         <option value="Türkiye">Türkiye</option>
                                         <option value="USA">USA</option>
                                         <option value="China">China</option>
@@ -857,6 +862,101 @@
                                     <label for="aboutOrganization" class="form-label">About Organization</label>
                                     <textarea class="form-control" aria-label="With textarea"
                                               id="aboutOrganization"></textarea>
+                                </div>
+                                <div class="col-6">
+                                    <label for="foundYear" class="form-label"
+                                    >Found Year</label>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="foundYear"
+                                            placeholder="2000"
+                                    />
+                                </div>
+                                <div class="col-6">
+                                    <label for="phoneNumber" class="form-label"
+                                    >Phone Number</label>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="phoneNumber"
+                                            placeholder="+901234567890"
+                                    />
+                                </div>
+                                <div class="col-6">
+                                    <label for="whatsappNumber" class="form-label"
+                                    >Whatsapp Number</label>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="whatsappNumber"
+                                            placeholder="+901234567890"
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="kipAddress" class="form-label">Kip Address</label>
+                                    <input type="email" class="form-control" id="kipAddress"
+                                           placeholder="mail@kip.tr"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputFacebook" id="inputFacebook" class="form-label"
+                                    >Facebook</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">@</span>
+                                        <input
+                                                type="text"
+                                                id="facebook"
+                                                class="form-control"
+                                                placeholder="facebook"
+                                                aria-label="Facebook"
+                                                aria-describedby="facebook"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputInstagram" id="inputInstagram" class="form-label"
+                                    >Instagram</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">@</span>
+                                        <input
+                                                type="text"
+                                                id="instagram"
+                                                class="form-control"
+                                                placeholder="instagram"
+                                                aria-label="Instagram"
+                                                aria-describedby="instagram"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputTwitter" id="inputTwitter" class="form-label"
+                                    >Twitter</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">@</span>
+                                        <input
+                                                type="text"
+                                                id="twitter"
+                                                class="form-control"
+                                                placeholder="twitter"
+                                                aria-label="Twitter"
+                                                aria-describedby="twitter"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputLinkedin" id="inputLinkedin" class="form-label"
+                                    >Linkedin</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">@</span>
+                                        <input
+                                                type="text"
+                                                id="linkedin"
+                                                class="form-control"
+                                                placeholder="linkedin"
+                                                aria-label="Linkedin"
+                                                aria-describedby="linkedin"
+                                        />
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary btn-bd-primary float-md-end"
@@ -916,6 +1016,7 @@
 
 <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/profile.js"></script>
 
 </body>
 </html>

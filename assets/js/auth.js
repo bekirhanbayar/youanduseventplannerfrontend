@@ -36,7 +36,7 @@ $(document).ready(function () {
 
                 setTimeout(function () {
                     window.location.href = 'account/index.html';
-                }, 8000);
+                }, 2000);
             },
             error: function (xhr, status, error) {
                 // Handle login error
