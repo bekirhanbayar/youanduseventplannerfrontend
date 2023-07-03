@@ -61,6 +61,10 @@ function updateProfile(profileData) {
         success: function (response) {
             // Handle successful profile update
             console.log(response);
+            $('#successProfileUpdateModal').removeClass('d-none').addClass('d-block');
+            setTimeout(function () {
+                window.location.href = 'account.html';
+            }, 2000);
         },
         error: function (xhr, status, error) {
             // Handle profile update error
